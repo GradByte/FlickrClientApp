@@ -10,7 +10,7 @@ import Foundation
 class NetworkManager {
     
     static let shared = NetworkManager()
-    static let apiKey = "ENTER_YOUR_OWN_API_KEY_FLICKR :)"
+    static let apiKey = "ENTER_YOUR_FLICKR_API_KEY"
     
     func fetchImage(withURLString url: String?, completion: @escaping (Data) -> Void) {
         if let urlString = url, let url = URL(string: urlString) {
